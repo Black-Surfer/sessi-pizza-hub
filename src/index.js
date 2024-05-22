@@ -29,7 +29,7 @@ const pizzaData = [
 
 function App(){
   return (
-<div>
+<div className='container'>
   <Header></Header>
   <Pizza></Pizza>
   <Pizza></Pizza>
@@ -40,22 +40,36 @@ function App(){
 }
 
 function Header(){
-  return <h1>SESSI PIZZA HUB</h1>
+  return (
+  <header className='header'>
+      <h1>SESSI PIZZA HUB</h1>
+  </header>
+  );
 }
 
 function Menu(){
-
+  return (
+    <main>
+      <h2>Our Menu</h2>
+      <Pizza></Pizza>
+      <Pizza></Pizza>
+      <Pizza></Pizza> 
+    </main>
+  )
 }
 function Footer(){
   const hour = new Date().getHours();
   const openHour = 8;
   const closeHour = 12;
+  const isOpen = hour >= openHour && hour <= closeHour;
 
-  if(hour >= openHour && hour <= closeHour) alert("We're currently open !");
-  else alert("Sorry we are closed!");
+
+  // if(hour >= openHour && hour <= closeHour) alert("We're currently open !");
+  // else alert("Sorry we are closed!");
 
    
   return <footer>{new Date().toLocaleTimeString()}, We're currently open !</footer>
+
 }
 function Pizza(){
   return <div>
