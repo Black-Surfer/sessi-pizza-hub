@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   color: black;
   font-weight: 400;
   background-color: white;
@@ -12,33 +12,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-container{
+container {
   max-width: 80rem;
-  margin:  0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4.8rem;
 }
 
-.header{
+.header {
   align-self: stretch;
 }
 
-.header h1{
-color: yellow;
-text-transform: uppercase;
-text-align:  center;
-font-size: 5.2rem;
-font-weight: 300;
-letter-spacing: 3px;
-position: relative;
-width: 100%;
-display: block;
+.header h1 {
+  color: yellow;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5.2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  position: relative;
+  width: 100%;
+  display: block;
 }
 
 .header h1::before,
-.header h1::after{
+.header h1::after {
   display: block;
   content: "";
   height: 3px;
@@ -48,17 +48,15 @@ display: block;
   top: calc(50% - 1px);
 }
 
-
-
-.header h1::before{
+.header h1::before {
   left: 0;
 }
 
-.header h1::after{
+.header h1::after {
   left: 0;
 }
 
-.menu{
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,27 +69,26 @@ display: block;
   border-top: 2px solid yellow;
 }
 
-.footer{
+.footer {
   font-size: 1.4rem;
 }
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.pizzas{
+.pizzas {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -116,18 +113,17 @@ code {
   padding: 0.4rem 0;
 }
 
-
 .pizza span {
   display: block;
   font-size: 1.6rem;
 }
 
-.pizza h3{
+.pizza h3 {
   font-size: 2rem;
   font-weight: 400;
 }
 
-.pizza.sold-out{
+.pizza.sold-out {
   color: #888;
 }
 
