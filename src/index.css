@@ -71,6 +71,16 @@ container {
 
 .footer {
   font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: yellow;
+  color: black;
+  width: 4.3rem;
+  border-radius: 15x;
 }
 
 * {
@@ -125,6 +135,11 @@ code {
 
 .pizza.sold-out {
   color: #888;
+}
+
+.pizza.sold-out img {
+  filter: grayscale();
+  opacity: 0.8;
 }
 
 .pizza p {
